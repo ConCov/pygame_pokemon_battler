@@ -1,1 +1,3 @@
-# pygame_pokemon_battler
+# Pygame Pokemon Battler
+
+Used for the Middle School Coding Club.
