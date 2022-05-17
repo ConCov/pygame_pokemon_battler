@@ -11,3 +11,5 @@ Used for the Middle School Coding Club.
 `python_explanation.py` - Where we can show the different aspects of python like for loops, if statements, while loops, operators, etc.
 
 `simple_window.py` - A simpler version of the `demo_pygame_screen.py` to show how it works and the aspects of pygame.
+
+`main.py` - The main file (not yet complete)
