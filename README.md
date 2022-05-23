@@ -12,4 +12,4 @@ Used for the Middle School Coding Club.
 
 `simple_window.py` - A simpler version of the `demo_pygame_screen.py` to show how it works and the aspects of pygame.
 
-`main.py` - The main file (not yet complete)
+`main.py` - The main game file (not yet completed)
