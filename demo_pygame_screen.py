@@ -10,7 +10,7 @@ Variables
 """
 window_width = 960
 window_height = 520
-background_colour = (0, 0, 0)
+background_colour = [0, 0, 0]
 fps = 30
 #image = pygame.image.load("C:/Users/...")
 image_x = 10
@@ -19,7 +19,7 @@ rect_x = 10
 rect_y = 20
 rect_width = 200
 rect_height = 100
-rect_colour = (255, 0, 0)
+rect_colour = [255, 0, 0]
 
 """
 Setup

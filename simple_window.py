@@ -51,28 +51,22 @@ while running_window == True:
     pygame.draw.rect(main_window, (rect_colour), (rect_x, rect_y, rect_width, rect_height))
 
     """
-    Add any event code after this
-    """
-    # In all the events that happen
-    for event in pygame.event.get():
-        # Check if the user pressed a key DOWN
-        if event.type == pygame.KEYDOWN:    # Can also have pygame.KEYUP
-            # If the user pressed the right arrow key
-            if event.key == pygame.K_RIGHT: # The key format is K_D or K_9 or K_UP
-                rect_x = rect_x + rect_speed
-            # If the user pressed the left arrow key
-            elif event.key == pygame.K_LEFT:
-                rect_x = rect_x - rect_speed
-
-    """
     Add any code before this
     """
 
     # Update the screen
     pygame.display.update()
 
-    # Check whether the 'x' is pressed
     for event in pygame.event.get():
+        # Check whether the 'x' is pressed
         if event.type == pygame.QUIT:
             running_window = False
             pygame.quit()
+        # Check if the user pressed a key DOWN
+        elif event.type == pygame.KEYDOWN:    # Can also have pygame.KEYUP
+            # If the user pressed the right arrow key
+            if event.key == pygame.K_RIGHT: # The key format is K_D or K_9 or K_UP
+                rect_x = rect_x + rect_speed
+            # If the user pressed the left arrow key
+            elif event.key == pygame.K_LEFT:
+                rect_x = rect_x - rect_speed
