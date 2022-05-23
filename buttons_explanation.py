@@ -1,8 +1,6 @@
 """
 Imports
 """
-# import sys
-# import os
 import pygame
 
 """
@@ -80,7 +78,10 @@ while running_window == True:
         elif event.type == pygame.MOUSEBUTTONUP:
             if checkInsideButton(button1_x, button1_y, button1_width, button1_height) == True:
                 print("Clicked the red button")
+                # background_colour = [100, 0, 0]
             elif checkInsideButton(button2_x, button2_y, button2_width, button2_height) == True:
                 print("Clicked the green button")
+                # background_colour = [0, 100, 0]
             else:
                 print("Mouse clicked")
+                # background_colour = [0, 0, 0]
