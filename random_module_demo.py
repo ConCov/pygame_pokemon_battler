@@ -1,12 +1,12 @@
 import random
 
-random_gen = random.randint(1, 3)
+hit_points = random.randint(1, 3)
 
-print(random_gen)
+print(hit_points)
 
-if random_gen == 1:
+if hit_points == 1:
     print("-1 hit point change")
-elif random_gen == 2:
+elif hit_points == 2:
     print("0 hit point change")
 else:
     print("+1 hit point change")
