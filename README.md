@@ -14,4 +14,6 @@ Used for the Middle School Coding Club.
 
 `simple_window.py` - A simpler version of the `demo_pygame_screen.py` to show how it works and the aspects of pygame.
 
+`random_module_demo.py` - A demonstration of how to use the random module.
+
 `main.py` - The main game file (not yet completed)
