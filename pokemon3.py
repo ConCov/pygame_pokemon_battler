@@ -96,7 +96,10 @@ while running_window:
         if option1_click == True:
             print("Attacked with option 1!")
             hit_points = 3 + random.randint(-1, 1)
-            health2 -= hit_points
+            if turn == 1:
+                health2 -= hit_points
+            else:
+                health1 -= hit_points
             fight_click = False
             option1_click = False
             time.sleep(1)
@@ -104,7 +107,10 @@ while running_window:
         if option2_click == True:
             print("Attacked with option 2!")
             hit_points = 3+ random.randint(-1, 1)
-            health2 -= hit_points
+            if turn == 1:
+                health2 -= hit_points
+            else:
+                health1 -= hit_points
             fight_click = False
             option2_click = False
             time.sleep(1)
@@ -129,11 +135,26 @@ while running_window:
             option4_click = False
             time.sleep(1)
 
+    p_width = player1_sprite.get_width()
+    p_height = player1_sprite.get_height()
+
     # Draw player 1
-    main_window.blit(player1_sprite, (200-player1_sprite.get_width()//2, 100-player1_sprite.get_height()//2))
+    main_window.blit(player1_sprite, (200-p_width//2, 100-p_height//2))
+
+    # Draw player 1 HP
+    pygame.draw.rect(main_window, color['white'], [200+p_width//2-40, 60, 20, 104]) 
+    pygame.draw.rect(main_window, color['green'], [200+p_width//2-38, 62+10*(10-health1), 16, 10*health1]) 
 
     # Draw player 2
     main_window.blit(player2_sprite, (200-player2_sprite.get_width()//2, 400-player2_sprite.get_height()//2))
+
+    #switching values
+    p_width = player2_sprite.get_width()
+    p_height = player2_sprite.get_height()
+    
+    # Draw player 2 HP
+    pygame.draw.rect(main_window, color['white'], [200+p_width//2-40, 360, 20, 104]) 
+    pygame.draw.rect(main_window, color['green'], [200+p_width//2-38, 362+10*(10-health2), 16, 10*health2]) 
 
     # Do action
     if click:
