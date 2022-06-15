@@ -18,8 +18,6 @@ color = {
 
 font = pygame.font.SysFont("Arial", 48)
 
-running_window = True
-
 player1 = {
     'xpos' : 0,
     'ypos' : 0,
@@ -38,4 +36,33 @@ player2 = {
 with open("./pokemon/pokemons.csv", "r", encoding="utf-8") as f:
     pokemons = list(csv.DictReader(f, delimiter=","))
 
+turn = 1
 
+running_window = True
+
+while running_window:
+
+    # Draw arena
+    pygame.draw.rect(main_window, color['brown'], (0,0,400,500))
+    pygame.draw.ellipse(main_window, color['black'], (150,200,100,100))
+    pygame.draw.ellipse(main_window, color['red'], (155,205,90,90))
+    pygame.draw.arc(main_window, color['grey'], (155,205,90,90), 0, math.pi,40)
+    pygame.draw.line(main_window, color['black'], (155,248),(245,248), 6)
+    pygame.draw.ellipse(main_window, color['black'], (200-12,250-12,24,24))
+    pygame.draw.ellipse(main_window, color['grey'], (200-7,250-7,14,14))
+
+    # Draw menu area
+    pygame.draw.rect(main_window, color['grey'], (400,0,560,500), )
+    player_turn_text = font.render(f"PLAYER {turn} TURN", 1, color['black'])
+    main_window.blit(player_turn_text, (410, 10))
+
+
+
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            running_window = False
+        if event.type == MOUSEBUTTONDOWN:
+            x,y = event.pos
+
+        if event.type == MOUSEMOTION:
+            print(event.pos)
