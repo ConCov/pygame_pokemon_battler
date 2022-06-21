@@ -1,3 +1,4 @@
+# I HONESTLY DON'T KNOW WHAT THIS IS...
 # Imports
 import time, random, math
 import pygame
