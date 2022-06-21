@@ -1,10 +1,12 @@
 # Pygame Pokemon Battler
 
-## What is this used for?
+## About
 
-Used for the Middle School Coding Club.
+Used for the Middle School Coding Club. The students decided on creating a Pokémon game.
 
-## What is each file?
+The final game is the `pokémon_final.py` file.
+
+## File Directory
 
 `Demos/demo_pygame_screen.py` - A demonstration of what we'll have them be able to create themselves before starting the project.
 
@@ -16,8 +18,8 @@ Used for the Middle School Coding Club.
 
 `Demos/random_module_demo.py` - A demonstration of how to use the random module.
 
-`Pokémon Final Unorganised.py` - The final pokémon game that we create with the students.
+`pokémon_final.py` - The final Pokémon game that we had in the final lesson. (Cleaned up)
 
-`Old Pokémon Versions/` - A folder with all the deprecated versions that we created with the students.
+`Old Pokémon Versions/` - A folder with all the deprecated versions that we created with the students in previous lessons.
 
-`pokemon/` - A folder containing all the sound and sprite files needed.
+`pokemon/` - A folder containing all the sound and sprite files needed for the `pokémon_final.py` file.
