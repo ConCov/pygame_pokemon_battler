@@ -12,10 +12,12 @@ Used for the Middle School Coding Club.
 
 `Demos/buttons_explanation.py` - Used to show how buttons can be created and used to do a range of actions.
 
-`simple_window.py` - A simpler version of the `demo_pygame_screen.py` to show how it works and the aspects of pygame.
+`Demos/simple_window.py` - A simpler version of the `demo_pygame_screen.py` to show how it works and the aspects of pygame.
 
 `Demos/random_module_demo.py` - A demonstration of how to use the random module.
 
-`pokemon.py` - The final pokemon game that we create with the students.
+`Pokémon Final Unorganised.py` - The final pokémon game that we create with the students.
 
-`main.py` - The main game file (not yet completed)
+`Old Pokémon Versions/` - A folder with all the deprecated versions that we created with the students.
+
+`pokemon/` - A folder containing all the sound and sprite files needed.
