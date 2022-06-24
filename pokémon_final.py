@@ -92,7 +92,7 @@ while running_window:
         text2_render = font.render("SWITCH", 1, color['white'])
         main_window.blit(text1_render, (600, 130))
         main_window.blit(text2_render, (600, 300))
-    
+
     # Check if the fight button is clicked
     if fight_click == True:
         # Draw the new text and buttons
@@ -116,7 +116,7 @@ while running_window:
             fight_click = False
             option1_click = False
             time.sleep(0.25)
-        
+
         # Check if the attack option 2 is clicked
         if option2_click == True:
             # Remove hit points
@@ -169,10 +169,10 @@ while running_window:
 
     # Draw player 2
     main_window.blit(player2_sprite, (200 - p2_width // 2, 400 - p2_height // 2))
-    
+
     # Draw player 2 health bar
-    pygame.draw.rect(main_window, color['white'], (200 + p_width // 2 - 40, 360, 20, 104))
-    pygame.draw.rect(main_window, color['green'], (200 + p_width // 2 - 38, 362 + 10 * (10 - health2), 16, 10 * health2))
+    pygame.draw.rect(main_window, color['white'], (200 + p2_width // 2 - 40, 360, 20, 104))
+    pygame.draw.rect(main_window, color['green'], (200 + p2_width // 2 - 38, 362 + 10 * (10 - health2), 16, 10 * health2))
 
     # If the user clicked the screen
     if click:
