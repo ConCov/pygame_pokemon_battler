@@ -14,11 +14,11 @@ main_window = pygame.display.set_mode((window_width,window_height))
 
 # Variables
 color = {
-    'brown' : (148,109,32)
-    'red' : (210,30,7)
-    'grey' : (213,209,198)
-    'white' : (255, 255, 255)
-    'black' : (0,0,0)
+    'brown' : (148,109,32),
+    'red' : (210,30,7),
+    'grey' : (213,209,198),
+    'white' : (255, 255, 255),
+    'black' : (0,0,0),
     'green' : (30,210,7)
 }
 font = pygame.font.SysFont("Arial", 48)
